@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>FC.porto</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="container">
+        <div class="header-title">
+          <div id="top-btn" class="header-logo">FC.porto</div>
+        </div>
+        <div class="header-menu">
+          <ul class="header-menu-right">
+            <li>
+              <a href="#stamps">試合</a>
+            </li>
+            <li>
+              <a href="#interview">監督インタビュー</a>
+            </li>
+            <li>
+              <a href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- トップ部分 -->
+    <div class="top-section gray-section">
+      <div class="top-inner">
+        <div class="container">
+          <div class="top-description">
+            <h2>FC.porto</h2>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- スライダー -->
+    <div id="stamps" class="stamps-section">
+      <div class="container">
+        <div class="section-title">
+          <h3>絶賛活動中！</h3>
+        </div>
+        <div id="stamp-carousel" class="carousel slide" data-ride="carousel"> 
+          <ol class="carousel-indicators">
+            <li data-target="#stamp-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#stamp-carousel" data-slide-to="1" class=""></li>
+            <li data-target="#stamp-carousel" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item stamp-box active">
+              <img src="IMG_2.jpeg" class="stamp-image">
+              <h4>リーグ戦！</h4>
+            </div>
+            <div class="item stamp-box">
+              <img src="IMG_2232.jpeg" class="stamp-image">
+              <h4>ソサイチ！</h4>
+            </div>
+            <div class="item stamp-box">
+              <img src="workout.png" class="stamp-image">
+              <h4>筋トレ！</h4>
+            </div>
+          </div> 
+        </div> 
+        <p>向上心を忘れない！</p>
+      </div>
+    </div>
+
+    <!-- インタビュー -->
+    <div id="interview" class="interview-section">
+      <div class="interview-section-top gray-section">
+        <div class="container">
+          <div class="section-title">
+            <h3>監督インタビュー</h3>
+          </div>
+          <img class="interview-image" src="IMG_1168.jpeg">
+        </div>
+      </div>
+      <div class="interview-section-bottom">
+        <div class="container">
+          <div class="interview-box">
+            <h5>Q. 普段はどのような活動をされているのですか？</h5>
+            基本的に、筋トレでござる。
+          </div>
+          <div class="interview-box">
+            <h5>Q. 得意なプレーは何ですか？</h5>
+            難しい質問でござるな。<br>
+            懸垂でござる。
+          </div>
+          <div class="interview-box">
+            <h5>Q. 好きな食べものは何ですか？</h5>
+            愚問でござる。<br>
+            protainでござる。
+          </div>
+          <div class="interview-box">
+            <h5>Q. 最後に、今後の活動展開について教えてください。</h5>
+            今後はトレーニー人口を増やしたいでござる。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="contact-section gray-section">
+      <div class="contact-section-inner">
+        <div class="container">
+          <div class="section-title">
+            <h3>お問い合わせ</h3>
+          </div>
+          <div class="contact-form">
+            <h4>メッセージを送る</h4>
+            <form>
+              <div class="error-message"></div>
+              <input type="text" name="name" placeholder="お名前" class="contact-name">
+              <div class="error-message"></div>
+              <input type="text" name="email" placeholder="メールアドレス" class="contact-email">
+              <div class="error-message"></div>
+              <textarea name="message" placeholder="メッセージ内容"></textarea>
+              <button type="submit" class="btn btn-contact">送信</button>
+            </form>
+          </div>
+          <div class="contact-about">
+            <h4>About Us</h4>
+            <p>基本的に筋トレしかしません。<br>
+              一緒にやりませんか？
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="follow-us">
+          
+          <a href="https://twitter.com/zujin14" class="social-icon" target='_blank'>
+            <span class="fa fa-twitter"></span>
+          </a>
+        </div>
+        <div class="copyright">©2016-
+          FC.porto
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
