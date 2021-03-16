@@ -49,8 +49,8 @@
         left: 90px;
     }
 
-    header {
-        width: 100%;
+    .header {
+        width: 100px;
         margin: 0 auto;
         text-align: center;
     }
