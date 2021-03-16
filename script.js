@@ -5,22 +5,8 @@ $(function() {
         $('html,body').animate({ 
           'scrollTop': 0 
         }, 'slow');
-      });
+    });
 
-
-    //slide
-    /*function toggleChangeBtn() {
-        var slideIndex = $('.slide').index($('.active'));
-        $('.slide-btn').show();
-        if (slideIndex == 0) {
-          $('.prev-btn').hide();
-        // 「3」の部分を、lengthメソッドを用いて書き換えてください
-        } else if (slideIndex == $('.slide').length - 1) {
-          $('.next-btn').hide();
-        }
-    }
-      
-    */
 
     $('.index-btn').click(function() {
         $('.active').removeClass('active');
@@ -28,18 +14,6 @@ $(function() {
         $('.slide').eq(clickedIndex).addClass('active');
     });
     
-    
-    /*  
-    $('.slide-btn').click(function() {
-        var $displaySlide = $('.active');
-        $displaySlide.removeClass('active');
-        if ($(this).hasClass('next-btn')) {
-          $displaySlide.next().addClass('active');
-        } else {
-          $displaySlide.prev().addClass('active');
-        }
-        toggleChangeBtn();
-    });  */
 
 
     $('.social-icon').hover(
@@ -63,6 +37,15 @@ $(function() {
           'scrollTop': position 
         }, 500);
     });
-      
 
-}); 
+    //hamburger
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+ 
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
