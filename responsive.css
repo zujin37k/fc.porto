@@ -1,4 +1,12 @@
 @media (max-width: 670px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    header {
+        width: 100%;
+    }
+
     .header-right {
       display: none;
     }
@@ -40,8 +48,8 @@
 
     .schedule-inner {
         background-color: rgba(0, 0, 0, 0.9);
-        width: 200px;
-        height: 220px;
+        width: 350px;
+        height: 250px;
         margin: 0 auto;
         text-align: center;
         position: absolute;
@@ -50,7 +58,7 @@
     }
 
     .header {
-        width: 10px;
+        width: 50px;
         margin: 0 auto;
         text-align: center;
     }
